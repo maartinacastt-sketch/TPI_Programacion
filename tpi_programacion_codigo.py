@@ -157,13 +157,18 @@ def buscar_pais(paises):
 # ── FILTROS ───────────────────────────────────────────────────────────────────
 
 def filtrar_continente(paises):
-    # Filtra países por continente
+    # Filtra países por continente (ignora mayúsculas, minúsculas y tildes)
     print("\n--- Filtrar por continente ---")
     if not paises:
         print("No hay países cargados.")
         return
-    continente = pedir_texto("Continente: ").lower()
-    resultados = [p for p in paises if p["continente"].lower() == continente]
+    ingreso = pedir_texto("Continente: ").lower()
+    continente_usuario = ingreso.replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")
+    
+    def normalizar(texto):
+        return texto.lower().replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")
+
+    resultados = [p for p in paises if normalizar(p["continente"]) == continente_usuario]
     if not resultados:
         print("No se encontraron países en ese continente.")
     else:
@@ -204,7 +209,7 @@ def filtrar_superficie(paises):
         print("No se encontraron países en ese rango.")
     else:
         mostrar_paises(resultados)
-
+        
 # ── ORDENAMIENTO ──────────────────────────────────────────────────────────────
 
 def ordenar_paises(paises):
