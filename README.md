@@ -171,7 +171,7 @@ América, Asia, Europa, África y Oceanía.
 
 ## Integrantes
 
-- Castro Martina [GRUPO_191]
+- Castro Martina [GRUPO_243]
 
 ## Materia
 
