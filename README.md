@@ -161,14 +161,12 @@ América, Asia, Europa, África y Oceanía.
 
 ## Documentación
 
-- Informe teórico y técnico (PDF): *[completar con el link o nombre del
-  archivo PDF]*
-
+- Informe teórico y técnico (PDF): https://drive.google.com/file/d/1wgSYPtaBRifzUYfMbKoKsJaXKjzX6uqs/view?usp=sharing
+  
 ## Video demostrativo
 
-- Link al video: *[completar con el link de YouTube/Drive con permisos
-  públicos]*
-
+- Link al video: https://youtu.be/Jk8Cgwm0iec?si=pDYpTls1Y1xE4k36
+  
 ## Integrantes
 
 - Castro Martina [GRUPO_243]
